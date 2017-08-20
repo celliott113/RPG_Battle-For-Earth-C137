@@ -1,0 +1,21 @@
+/*==================== Main Body Content ====================*/
+body {
+  background-image: url('../images/background.png');
+  background-color: #f7e72c;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  width: auto;
+  text-align: center;
+}
+
+.banner {
+  max-height: 250px;
+  max-width: 100%;
+}
+
+/*====================== @media Queries ======================*/
