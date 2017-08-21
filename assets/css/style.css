@@ -19,3 +19,6 @@ header {
 }
 
 /*====================== @media Queries ======================*/
+@media only screen and (max-width: 767px) {
+  background-image: url('../images/background.png');
+}
