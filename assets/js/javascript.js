@@ -13,7 +13,7 @@ $(document).ready(function() {
     //================== Playable Characters ===================//
     let characters = {
         'rickSanchez': {
-            name: 'rick sanchez',
+            name: 'rickSanchez',
             health: 120,
             attack: 8,
             imageUrl: "assets/images/RickSanchez.png",
@@ -27,14 +27,14 @@ $(document).ready(function() {
             enemyAttackBack: 5
         },
         'scaryTerry': {
-            name: 'scary terry',
+            name: 'scaryTerry',
             health: 150,
             attack: 8,
             imageUrl: "assets/images/ScaryTerry.png",
             enemyAttackBack: 20
         },
         'testicleMonster': {
-            name: 'testicle monster',
+            name: 'testicleMonster',
             health: 180,
             attack: 7,
             imageUrl: "assets/images/TesticleMonster.png",
