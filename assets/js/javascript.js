@@ -207,10 +207,12 @@ $(document).ready(function() {
                 if (killCount >= 3) {
                     renderMessage("clearMessage");
                     restartGame("You kicked them in the nads! Way to go!!!");
-                    win.play();
+                    setTimeout(function() {
+                        win.play();
+                    }, 2000);
                     setTimeout(function() {
                         victory.play();
-                    }, 5000);
+                    }, 6000);
                 }
             }
             turnCounter++;
