@@ -6,7 +6,7 @@ $(document).ready(function() {
     let lost = new Audio('assets/audio/lost.wav');
     let defeatEnemy = new Audio('assets/audio/defeatenemy.wav');
     let win = new Audio('assets/audio/win.wav');
-    let attack = new Audio('assets/audio/attack.wav');
+    let attack = new Audio('assets/audio/attack2.wav');
     let thatsRetarded = new Audio('assets/audio/thatsretarded.wav');
     //==================== End Audio Files =====================//
 
@@ -137,7 +137,7 @@ $(document).ready(function() {
             $('#defender').empty();
             $('#defender').append("The poor douchebag selected")
             renderOne(charObj, '#defender', 'defender');
-            defeatEnemy.play();
+            attack.play();
         }
         //=========== End If Defender Attached Render ===========//
 
@@ -196,7 +196,9 @@ $(document).ready(function() {
                 if (currSelectedCharacter.health <= 0) {
                     renderMessage("clearMessage");
                     restartGame("You're a piece of shit. Yeah. I can prove it mathematically. Actually, let me grab my white board. This has been a long time coming!");
-                    lost.play();
+                    setTimeout(function() {
+                        lost.play();
+                    }, 1000)
                     $("#attack-button").unbind("click");
                 }
             } else {
@@ -208,8 +210,7 @@ $(document).ready(function() {
                     win.play();
                     setTimeout(function() {
                         victory.play();
-                    }, 4000);
-
+                    }, 5000);
                 }
             }
             turnCounter++;
